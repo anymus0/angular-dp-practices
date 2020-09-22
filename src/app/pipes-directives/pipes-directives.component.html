@@ -1,0 +1,9 @@
+<h2>Számok 1-10-ig a négyzeten pipe-olással</h2>
+<div *ngFor="let number of nums">
+  <p>{{ number | toSquare }}</p>
+</div>
+
+<h2>Számok 1-10-ig a négyzeten pipe-olással és directive-el</h2>
+<div *ngFor="let number of nums" [appHideEvenNum]="number">
+  <p>{{ number | toSquare }}</p>
+</div>
