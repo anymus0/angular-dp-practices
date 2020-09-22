@@ -1,1 +1,10 @@
+<h2>Számok 1-10-ig</h2>
 <p *ngFor="let number of nums">{{ number }}</p>
+
+<h2>Páros számok 1-10-ig</h2>
+<div *ngFor="let number of nums">
+  <p *ngIf="(number%2) === 0">{{ number }}</p>
+</div>
+
+<h2>Számok 1-10-ig hidden attribute-al</h2>
+<p hidden *ngFor="let number of nums">{{ number }}</p>

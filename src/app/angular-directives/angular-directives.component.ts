@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class AngularDirectivesComponent implements OnInit {
   nums: Array<number>
 
+  addNewNum(): void {
+    this.nums.push(1)
+  }
+
   constructor() {
     this.nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   }
