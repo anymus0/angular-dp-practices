@@ -1,0 +1,6 @@
+<ng-container *ngIf="text===''; else elseTemplate">
+  <p>Kérlek gépelj be valamit...</p>
+</ng-container>
+<ng-template #elseTemplate>
+  <p>Az üzenet: {{ text }}</p>
+</ng-template>
